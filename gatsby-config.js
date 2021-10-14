@@ -6,6 +6,8 @@
  *
  */
 
+require('dotenv').config()
+
 module.exports = {
   /**
    * Adding plugins to this array adds them to your Gatsby site.
