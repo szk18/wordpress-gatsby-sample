@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import parse from 'html-react-parser'
 
+import * as styles from './layout.module.scss'
+
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
@@ -30,6 +32,7 @@ const Layout = ({ isHomePage, children }) => {
             {title}
           </Link>
         )}
+        <p className={styles.sampleText}>sample project</p>
       </header>
 
       <main>{children}</main>
