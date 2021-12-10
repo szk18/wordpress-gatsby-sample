@@ -31,6 +31,11 @@ module.exports = {
         url:
           process.env.WPGRAPHQL_URL ||
           `https://wpgatsbydemo.wpengine.com/graphql`,
+        type: {
+          __all: {
+            limit: 20,
+          }
+        }
       },
     },
 
